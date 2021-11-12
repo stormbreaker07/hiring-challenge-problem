@@ -1,4 +1,4 @@
-package com.example.hiring_Chalenge;
+package com.example.hiringChalenge;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

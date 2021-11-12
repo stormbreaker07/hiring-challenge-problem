@@ -1,4 +1,4 @@
-package com.example.hiring_Chalenge.models;
+package com.example.hiringChalenge.models;
 
 
 import lombok.Getter;

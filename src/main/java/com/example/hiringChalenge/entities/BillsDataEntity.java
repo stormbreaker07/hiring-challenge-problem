@@ -1,7 +1,7 @@
-package com.example.hiring_Chalenge.entities;
+package com.example.hiringChalenge.entities;
 
 
-import com.example.hiring_Chalenge.models.AddBillModal;
+import com.example.hiringChalenge.models.AddBillModal;
 import lombok.Getter;
 import lombok.Setter;
 

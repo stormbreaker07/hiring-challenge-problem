@@ -1,10 +1,10 @@
-package com.example.hiring_Chalenge.controllers;
+package com.example.hiringChalenge.controllers;
 
 
-import com.example.hiring_Chalenge.entities.BillsDataEntity;
-import com.example.hiring_Chalenge.models.AddBillModal;
-import com.example.hiring_Chalenge.services.AddBill;
-import com.example.hiring_Chalenge.services.BillInfoRetrievalService;
+import com.example.hiringChalenge.entities.BillsDataEntity;
+import com.example.hiringChalenge.models.AddBillModal;
+import com.example.hiringChalenge.services.AddBill;
+import com.example.hiringChalenge.services.BillInfoRetrievalService;
 import javassist.tools.web.BadHttpRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,8 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.xml.ws.http.HTTPException;
-import java.rmi.ServerError;
-import java.rmi.ServerException;
 import java.util.ArrayList;
 import java.util.List;
 

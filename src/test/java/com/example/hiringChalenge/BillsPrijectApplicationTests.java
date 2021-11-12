@@ -1,4 +1,4 @@
-package com.example.hiring_Chalenge;
+package com.example.hiringChalenge;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

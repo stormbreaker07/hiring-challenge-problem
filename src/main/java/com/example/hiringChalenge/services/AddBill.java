@@ -1,9 +1,9 @@
-package com.example.hiring_Chalenge.services;
+package com.example.hiringChalenge.services;
 
 
-import com.example.hiring_Chalenge.entities.BillsDataEntity;
-import com.example.hiring_Chalenge.models.AddBillModal;
-import com.example.hiring_Chalenge.repositories.BillsData;
+import com.example.hiringChalenge.entities.BillsDataEntity;
+import com.example.hiringChalenge.models.AddBillModal;
+import com.example.hiringChalenge.repositories.BillsData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
