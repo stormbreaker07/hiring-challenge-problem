@@ -1,32 +1,31 @@
 package com.example.hiring_Chalenge.entities;
 
 
+import com.example.hiring_Chalenge.models.AddBillModal;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "bills-data")
+@Table(name = "bills_data")
 public class BillsDataEntity {
 
     @Id
-    @Column(name = "biil-id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "biil_id")
     @Getter @Setter private Long id;
-    @Column(name= "bill-number")
+    @Column(name= "bill_number")
     @Getter @Setter private String billNumber;
-    @Column(name= "billed-to")
+    @Column(name= "billed_to")
     @Getter @Setter private String billedTo;
-    @Column(name= "billed-price")
+    @Column(name= "billed_price")
     @Getter @Setter private String billedPrice;
     @Column(name= "tax")
     @Getter @Setter private String tax;
-    @Column(name= "total-price")
+    @Column(name= "total_price")
     @Getter @Setter private String totalPrice;
-    @Column(name= "due-date")
+    @Column(name= "due_date")
     @Getter @Setter private String date;
 
     public BillsDataEntity() {
@@ -39,6 +38,15 @@ public class BillsDataEntity {
         this.date = date;
         this.tax = tax;
         this.totalPrice = totalPrice;
+    }
+
+    public BillsDataEntity(AddBillModal billData) {
+        this.billNumber = billData.getBillNumber();
+        this.billedPrice = billData.getBilledPrice();
+        this.billedTo = billData.getBilledTo();
+        this.date = billData.getDate();
+        this.tax = billData.getTax();
+        this.totalPrice = billData.getTotalPrice();
     }
 
 }
