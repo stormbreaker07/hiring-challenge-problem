@@ -42,7 +42,7 @@ public class Dashboard {
 
     }
 
-    @GetMapping("/")
+    @GetMapping("/bills")
     public ResponseEntity<List<BillsDataEntity>> getAllBills() {
             try {
                 return ResponseEntity.ok().body(billInfoRetrievalService.getAllBillsInfo());
